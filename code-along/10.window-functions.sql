@@ -1,5 +1,5 @@
 -- Active: 1734535741995@@127.0.0.1@3306@parks_and_recreation
--- Window Functions --
+-- Window Functions -- The better way of doing things instead of subqueries
 
 -- standard group by with join to get average salary--
 SELECT 

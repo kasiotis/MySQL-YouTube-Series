@@ -1,6 +1,7 @@
 -- Active: 1734535741995@@127.0.0.1@3306@parks_and_recreation
 
 -- CTEs - allow you to define a subquery block that you can then reference in Main Query --
+------------- Think of it as a static function for a Query that you can call and access later -------------
 -- Difference from standard subqueries: 
 --    - naming, formatting, standardized approach/cleaner, can perform advanced calcs
 
@@ -21,7 +22,7 @@ SELECT
 FROM CTE_Example
 
 
--- Chaining CTEs together -- This Allows for operations to be performed separately and then combined - WE LIKE THIS
+-- Chaining CTEs together -- This Allows for operations/querys to be performed andstored separately and then combined in your main query - WE LIKE THIS
 WITH CTE_Example AS ( -- Defining the First CTE
     SELECT 
         employee_id,

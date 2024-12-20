@@ -22,10 +22,10 @@ SELECT
     salary,
     -- start of subquery --
     (
-        SELECT
-            AVG(salary)
-        FROM
-            employee_salary
+    SELECT
+        AVG(salary)
+    FROM
+        employee_salary
     ) as total_salary -- end of subquery --
 FROM employee_salary
 
